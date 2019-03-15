@@ -71,8 +71,10 @@ for (pkg in c("shiny")) {
 
 # see: https://shiny.rstudio.com/articles/running.html
 
+# In a termimal window type (with your custer path to app):
+
 # R -e "shiny::runApp('[path to app.R]')"
-# R -e "shiny::runApp('~/Documents/DSI/intro_to_shiny/code/02-hist-app.R')"
+# R -e "shiny::runApp('~/Documents/intro_to_shiny/code/02-hist-app.R')"
 
 #By default runApp starts the application on a randomly selected port. For example, it might start on port 4700, in which case you can connect to the running application by navigating your browser to http://localhost:4700.
 
