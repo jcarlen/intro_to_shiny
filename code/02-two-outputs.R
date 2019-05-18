@@ -11,11 +11,13 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
+  data <- reactive({rnorm(input$num)})
+  
   output$hist <- renderPlot({
-    hist(rnorm(input$num))
+    hist(data())
   })
   output$stats <- renderPrint({
-    summary(rnorm(input$num))
+    summary(data())
   })
 }
 
